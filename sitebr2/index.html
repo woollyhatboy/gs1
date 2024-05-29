@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Viagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gerenciamento de Viagens</h1>
+    </header>
+    <main>
+        <section id="formulario-secao">
+            <h2>Registrar uma Viagem</h2>
+            <form id="formulario-viagem" class="clickable">
+                <label for="nome-viagem">Nome da Viagem:</label>
+                <input type="text" id="nome-viagem" required>
+
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" required>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" required>
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" required></textarea>
+
+                <label for="valor">Valor (R$):</label>
+                <input type="number" id="valor" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="doacao">
+                <img src="img/baleia.jpg" alt="Baleia" id="imagem-baleia">
+                <p>20% do valor será doado para a preservação dos oceanos</p>
+            </div>
+        </section>
+        <section id="busca-secao">
+            <h2>Buscar Viagens</h2>
+            <input type="text" id="busca" placeholder="Buscar pelo nome da viagem..." class="clickable">
+            <div id="lista-viagens"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Gerenciamento de Viagens</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
